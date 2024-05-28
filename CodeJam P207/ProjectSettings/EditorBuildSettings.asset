@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Formspil.unity
     guid: 00013381c2c902e4c83809d16ae10d97
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpeedRun/SpeedRun.unity
     guid: af3987d4443c2fc4fb513fbb1ca475c8
   - enabled: 1
