@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class CharacterInteraction : MonoBehaviour
 {
-    private bool isHit = false; // Flag to track if the character has been hit already
     [SerializeField] private float kickForce = 20f; // Adjust the kick force as needed
 
     // Called when a collision occurs
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Cylinder") && !isHit)
+        if (collision.gameObject.CompareTag("Cylinder"))
         {
             // Get the direction from the ball to the player
             Vector3 kickDirection = transform.position - collision.transform.position;
@@ -31,6 +30,5 @@ public class CharacterInteraction : MonoBehaviour
             // Apply a force to kick the character upward and backward
             rb.AddForce((Vector3.up + kickDirection) * kickForce, ForceMode.Impulse);
         }
-        isHit = true; // Set isHit to true to ensure the character is kicked away only once
     }
 }

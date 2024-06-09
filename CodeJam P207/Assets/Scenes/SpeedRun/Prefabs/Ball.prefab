@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 122083951560531012}
   - component: {fileID: 3468325651928410805}
   - component: {fileID: 9005231131842365799}
-  - component: {fileID: 1360329587382278310}
+  - component: {fileID: 197443975224219571}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Cylinder
@@ -136,7 +136,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1360329587382278310
+--- !u!114 &197443975224219571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,4 +148,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc98592b8c3257246a732f73e89ae020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kickForce: 50
+  kickForce: 200

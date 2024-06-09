@@ -284,9 +284,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 42435817}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 10
+  leftBoundary: -10
+  rightBoundary: 10
 --- !u!64 &42435819
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1098,9 +1101,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 202514836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 10
+  leftBoundary: -10
+  rightBoundary: 10
 --- !u!64 &202514839
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1588,9 +1594,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 306046308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 5
+  leftBoundary: -10
+  rightBoundary: 10
 --- !u!64 &306046311
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2028,9 +2037,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 448099447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 695913ca33c641f4da17c78ea5ac08a5, type: 3}
+  m_Script: {fileID: 11500000, guid: fc98592b8c3257246a732f73e89ae020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kickForce: 100
 --- !u!1 &544220719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,9 +2402,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 575664594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 5
+  leftBoundary: -10
+  rightBoundary: 10
 --- !u!64 &575664596
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3095,9 +3108,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 822493617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 10
+  leftBoundary: -10
+  rightBoundary: 10
 --- !u!64 &822493619
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3305,9 +3321,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 838448296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 5
+  leftBoundary: -10
+  rightBoundary: 10
 --- !u!1 &838679897 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5228334142545350563, guid: 7671d2023f0255b49994db8242c69b96, type: 3}
@@ -3330,9 +3349,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23171b2c26a929458af6b7405f4526d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 0}
-  respawnTime: 5
-  spawnPoints: []
+  ballPrefab: {fileID: 838679897}
+  respawnTime: 2
+  spawnPoints:
+  - {fileID: 1457838650}
+  - {fileID: 1032815332}
+  - {fileID: 2101764892}
+  - {fileID: 1146795102}
 --- !u!95 &838679910
 Animator:
   serializedVersion: 7
@@ -5403,9 +5426,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1445745946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda31ab1c189d584e9dffbc834555f96, type: 3}
+  m_Script: {fileID: 11500000, guid: 1977afce0568d3a4eaa1ba714ab154e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 5
+  leftBoundary: -5
+  rightBoundary: 5
 --- !u!1 &1456412102
 GameObject:
   m_ObjectHideFlags: 0
@@ -7843,10 +7869,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005231131842365799, guid: 7671d2023f0255b49994db8242c69b96, type: 3}
       propertyPath: m_Mass
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1360329587382278310, guid: 7671d2023f0255b49994db8242c69b96, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
